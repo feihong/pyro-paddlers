@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 const TEMPLATE = `
-Hi NAME, this is Feihong. We're going to get in the boat at 11:00 am.
-If you're having problems finding the practice site, call me at PHONE.
+Hi NAME, this is your captain, Feihong. We're going to get in the boat at 11:00 am.
+If you're having problems finding the practice site at 1020 W. Weed St., call me at PHONE.
 `.trim().replace('\n', ' ')
 
 class App extends React.Component {
@@ -53,6 +53,7 @@ class App extends React.Component {
 
     return <div>
       <textarea id='message-template'
+                rows='4'
                 onChange={this.changeTemplate}
                 value={this.state.template} />
 

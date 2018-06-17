@@ -4,18 +4,18 @@
 
 ## What to Wear/Bring
 
+- Water
 - Suncreen
 - Sunglasses
-- Water
 - Hat
 - Light colored clothing that you don't mind getting wet (recommended: swim trunks or river shorts)
 - Sandals or other footwear that dries quickly
 
-They will have water on the dock for sale in case anyone forgets their water.
+They will have water on the dock for sale in case you forget to bring some.
 
 ## Checklist
 
-- If this is your first time attending practice, fill out the [waiver form](https://cdn.glitch.com/a6846bfa-646f-429a-8044-e7d0bc985cc7%2Fwaiver-2018.pdf?1528290288328) (recommended: print and complete at home, bring to practice to save time)
+- If this is your first time attending practice, fill out the [waiver form](/waiver-2018.pdf) (recommended: print and complete at home, bring to practice to save time)
 - Warmup
 - Put on life jacket (they are pretty much all the same size)
 - Choose paddle (pick one whose handle comes up to your armpit)
