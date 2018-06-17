@@ -16,14 +16,10 @@ if (!process.env.PROJECT_DOMAIN) {
 const converter = new showdown.Converter()
 
 const app = express()
-const env = nunjucks.configure('templates', {
+nunjucks.configure('templates', {
   autoescape: true,
   express: app,
   noCache: true,
-})
-env.addFilter('smsBody', function(name) {
-  let parts = name.split(' ')
-  return escape(`Hi ${parts[0]}, this is a test. Please ignore.`)
 })
 
 const basicAuth = require('express-basic-auth')
@@ -63,21 +59,10 @@ async function renderPage(mdFile) {
 </html>`
 }
 
-async function getTeamRows() {
+async function getTeam() {
   let text = await fs.readFile('./.data/team.csv', 'utf-8')
   return new Promise((resolve, _reject) => {
-    csvParse(text, null, (_err, output) => resolve(output))
-  })
-}
-
-async function getTeam() {
-  let rows = await getTeamRows()
-  return rows.map(arr => {
-    return {
-      email: arr[0],
-      name: arr[1],
-      phone: arr[2],
-    }
+    csvParse(text, {columns: true}, (_err, rows) => resolve(rows))
   })
 }
 

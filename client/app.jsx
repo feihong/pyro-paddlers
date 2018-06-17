@@ -57,6 +57,8 @@ class App extends React.Component {
                 onChange={this.changeTemplate}
                 value={this.state.template} />
 
+      <p>{this.state.members.length} members</p>
+
       <table className='table table-striped'>
         <thead>
           <tr>
