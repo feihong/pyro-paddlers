@@ -1,0 +1,7 @@
+#message-template {
+  width: 100%;
+}
+
+button:first-child {
+  margin-right: 1rem;
+}
