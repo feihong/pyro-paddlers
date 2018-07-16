@@ -1,8 +1,10 @@
 # UIC Pyro Paddlers 2018
 
-The call for paddlers is still open! Fill out the [online interest form](https://docs.google.com/forms/d/e/1FAIpQLSc5HWHUYLpW8Bfm7lWVvt0yZWHGRWLVsrZrlj4pIlBKBfVzpA/viewform?usp=sf_link) before July 9.
+If you are attending the race, please fill out the [transportation survey](https://goo.gl/forms/x1eJzUBx2OUd0Hgi2). This will help us arrange carpools and reserve a van from UIC.
 
-## Practices 
+The call for paddlers is still open! Fill out the [online interest form](https://goo.gl/forms/2eiVjvxEl98adwqB2).
+
+## Practices
 
 All practices are held at Frances K. Mennone Boathouse, 1020 W. Weed St ([Directions](practice-directions)). Make sure to wear clothes that you don't mind getting wet! For more details, consult the [Practice Guide](practice-guide).
 
@@ -13,3 +15,7 @@ All practices are held at Frances K. Mennone Boathouse, 1020 W. Weed St ([Direct
 ## The Race
 
 The Chicago International Dragon Boat Festival will be held on July 28 ([add to calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=M3JsMmw5aGN0aDM2bmpxaTE2Ymg4MnJpc2EgZzA4OWRycjdnMzVxcXYyb2pqb20xaWlma29AZw&tmsrc=g089drr7g35qqv2ojjom1iifko%40group.calendar.google.com)) at Busse Woods in Schaumburg/Elk Grove ([Directions](race-directions)). Prepare to arrive by 7:30 am and stay until 5 pm. Consult the [Race Guide](race-guide) for details.
+
+## What is Dragon Boat?
+
+A dragon boat is essentially a giant canoe that seats 20 paddlers. To learn more, please visit [our getting started guide](getting-started).
