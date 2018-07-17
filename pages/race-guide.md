@@ -9,8 +9,12 @@
 - Suncreen
 - Sunglasses
 - Clothes that you don't mind getting wet (recommended: swim trunks or river shorts)
-- Sandals or other footwear that dries quickly
+- Sandals or other footwear that dries quickly. **Please note that you must wear something with a back strap! Flip flops are not allowed!**
 - Snacks (lunch will be provided by UIC)
+
+### Optional
+
+- A pad for your butt
 
 ## Checklist
 
@@ -22,7 +26,7 @@
 - Put on life jacket
 - Choose paddle (I think they are all the same size)
 - Load the boat
-- Do a few starts
+- Do a few starts (3-10-10)
 - Race!
 - Lunch, provided by UIC
 - More of that
