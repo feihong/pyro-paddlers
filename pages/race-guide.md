@@ -18,7 +18,7 @@
 
 ## Checklist
 
-- Find our tent located at ???
+- Find our tent located at site 33
 - Warmup
 - Captain determines lineup for first race
 - Do syncing drill
