@@ -21,13 +21,14 @@ class App extends React.Component {
   }
 
   changeTemplate(evt) {
-    this.setState({template: evt.target.value.strip()})
+    this.setState({template: evt.target.value})
   }
 
   sendSms(name, number) {
     let body = escape(
       this.state.template
-        .replace('NAME', name.split(' ')[0])
+        .trim()
+        .replace('NAME', name.split(' ')[0])    // first name
         .replace('PHONE', window.phone)
     )
     console.log(`sms://${number}&body=${body}`)
@@ -39,9 +40,9 @@ class App extends React.Component {
   }
 
   render() {
-    let rows = this.state.members.map(m =>
+    let rows = this.state.members.map((m, i) =>
       <tr key={m.name}>
-        <td>{m.name}</td>
+        <td>{i+1}. {m.name}</td>
         <td>
           <button className='btn btn-outline-primary btn-sm'
                   onClick={this.sendSms.bind(this, m.name, m.phone)}>text</button>
