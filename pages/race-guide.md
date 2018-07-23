@@ -2,9 +2,7 @@
 
 # Race Day Guide
 
-Prepare to arrive by 7:30 am and stay until 5 pm. Expect to race a minimum of 3 times, more if we advance further in the bracket.
-
-[Race Website](http://www.gwndragonboat.com/Default.asp?id=chicago&l=1)
+Prepare to arrive by 7:30 am and stay until 5 pm. Expect to race a minimum of 3 times, more if we advance further in the bracket. Consult the [official race website](http://www.gwndragonboat.com/Default.asp?id=chicago&l=1) for more details.
 
 ## What to Wear/Bring
 
