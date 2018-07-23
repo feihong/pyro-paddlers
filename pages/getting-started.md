@@ -1,3 +1,5 @@
+[← Home](/)
+
 # Getting Started with Dragon Boat Racing
 
 ## What a race looks like

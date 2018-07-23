@@ -1,8 +1,8 @@
 # UIC Pyro Paddlers 2018
 
-If you are attending the race, please fill out the [transportation survey](https://goo.gl/forms/x1eJzUBx2OUd0Hgi2). This will help us arrange carpools and reserve a van from UIC.
+[View team photos](photos)
 
-The call for paddlers is still open! Fill out the [online interest form](https://goo.gl/forms/2eiVjvxEl98adwqB2).
+If you are attending the race, please fill out the [transportation survey](https://goo.gl/forms/x1eJzUBx2OUd0Hgi2). This will help us arrange carpools and get a headcount for the after-race party.
 
 ## Practices
 
