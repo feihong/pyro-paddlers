@@ -6,7 +6,7 @@ If you are attending the race, please fill out the [transportation survey](https
 
 ## The Race
 
-The Chicago International Dragon Boat Festival will be held on July 28 ([add to calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=M3JsMmw5aGN0aDM2bmpxaTE2Ymg4MnJpc2EgZzA4OWRycjdnMzVxcXYyb2pqb20xaWlma29AZw&tmsrc=g089drr7g35qqv2ojjom1iifko%40group.calendar.google.com)) at Busse Woods in Schaumburg/Elk Grove ([Directions](race-directions)). Prepare to arrive by 7:30 am and stay until 5 pm. Consult the [Race Guide](race-guide) for details.
+The Chicago International Dragon Boat Festival will be held on July 28 ([add to calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=M3JsMmw5aGN0aDM2bmpxaTE2Ymg4MnJpc2EgZzA4OWRycjdnMzVxcXYyb2pqb20xaWlma29AZw&tmsrc=g089drr7g35qqv2ojjom1iifko%40group.calendar.google.com)) at Busse Woods in Schaumburg/Elk Grove ([Directions](race-directions)). Prepare to arrive by 9:00 am (8:00 am if you haven't signed the waiver yet) and stay until 5 pm. Consult the [Race Guide](race-guide) for details.
 
 ## Practices
 

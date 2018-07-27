@@ -11,6 +11,8 @@ Prepare to arrive by 8:30 am and stay until 5 pm. Expect to race a minimum of 3 
 - Water or Gatorade
 - Clothes that you don't mind getting wet (recommended: swim trunks or river shorts)
 - Sandals with a back strap, or old shoes. **Please note that you must wear something with a back strap! Flip flops are not allowed!**
+- Blanket or towel to lie down on
+- Cash to pay for the t-shirt (if you asked for one)
 - Snacks (lunch will be provided by UIC)
 
 ### Optional

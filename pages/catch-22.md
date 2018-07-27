@@ -8,11 +8,15 @@ Directions:
 
 This restaurant is very close to the race site, and coincidentally it is also my favorite restaurant in the Chicagoland area! (Yes, I have been to Chicago's Chinatown. Many times.) Overall this is a really solid Chinese restaurant, so you can't go too wrong with whatever the server recommends. Below are some highlights from their menu. Inveterate foodies can read this [very long forum post about the restaurant](http://www.lthforum.com/bb/viewtopic.php?f=14&t=27220).
 
-You can view their [full menu online](https://web.archive.org/web/20171212082847/http://www.chefping.com:80/menu.html). Note that this is a Wayback Machine link; their site is currently offline. A solid backup option would be [Penang](https://goo.gl/maps/6nYeMBeetnE2), a well-regarded Malaysian restaurant that is roughly the same distance from the race site.
+You can view their [full menu online](https://web.archive.org/web/20171212082847/http://www.chefping.com:80/menu.html). Note that this is a Wayback Machine link; their site is currently offline. You can call them at (847) 981-8888, or you could try [placing your order online](http://chefping.carry-out.com/). A solid backup option would be [Penang](https://goo.gl/maps/6nYeMBeetnE2), a well-regarded Malaysian restaurant that is roughly the same distance from the race site.
 
 ### Appetizers
 
 素鸡 Vegetarian Chicken - This is probably their best tofu dish
+
+### Vegetables
+
+炒豆苗 Sauteed Peapod Tips - Maybe not that special, but I think most suburban Chinese restaurants won't serve this
 
 ### 家乡菜 Old Time Favorite from Home
 
