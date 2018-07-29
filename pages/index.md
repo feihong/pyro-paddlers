@@ -1,6 +1,6 @@
 # UIC Pyro Paddlers 2018
 
-[View team photo album](https://photos.app.goo.gl/5LnAvNgDnfA3hqiF7)
+[View team photo album](https://photos.app.goo.gl/y7zB9qd3J5cpVudN6)
 
 [What did we eat?](catering)
 
