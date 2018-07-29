@@ -1,8 +1,8 @@
 # UIC Pyro Paddlers 2018
 
-[View team photos](photos)
+[View team photo album](https://photos.app.goo.gl/5LnAvNgDnfA3hqiF7)
 
-If you are attending the race, please fill out the [transportation survey](https://goo.gl/forms/x1eJzUBx2OUd0Hgi2). This will help us arrange carpools and get a headcount for the after-race party.
+[What did we eat?](catering)
 
 ## The Race
 
