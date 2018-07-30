@@ -8,6 +8,8 @@
 
 [Join the Facebook Group to be notified of future events](https://www.facebook.com/groups/PyroPaddlers/)
 
+[Calendar](https://calendar.google.com/calendar/embed?src=pyro.paddlers%40gmail.com&ctz=America%2FChicago)
+
 ## What is Dragon Boat?
 
 A dragon boat is essentially a giant canoe that seats 20 paddlers. To learn more, please visit [our getting started guide](getting-started).
