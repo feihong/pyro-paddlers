@@ -1,27 +1,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const TEMPLATE = `
-Hi NAME, this is your captain, Feihong. We're going to get in the boat at 11:00 am.
-If you're having problems finding the practice site at 1020 W. Weed St., call me at PHONE.
-`.trim().replace('\n', ' ')
-
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      template: TEMPLATE,
+      templates: [],
+      template: '',
       members: [],
+      index: 0,
     }
     this.changeTemplate = this.changeTemplate.bind(this)
   }
 
   componentDidMount() {
-    this.setState({members: window.members})
+    const templates = window.messageTemplates
+    this.setState({ members: window.members, templates, template: templates[0].body })
   }
 
   changeTemplate(evt) {
-    this.setState({template: evt.target.value})
+    this.setState({ template: evt.target.value })
   }
 
   sendSms(name, number) {
@@ -42,21 +40,33 @@ class App extends React.Component {
   render() {
     let rows = this.state.members.map((m, i) =>
       <tr key={m.name}>
-        <td>{i+1}. {m.name}</td>
+        <td>{i + 1}. {m.name}</td>
         <td>
           <button className='btn btn-outline-primary btn-sm'
-                  onClick={this.sendSms.bind(this, m.name, m.phone)}>text</button>
+            onClick={this.sendSms.bind(this, m.name, m.phone)}>text</button>
           <button className='btn btn-outline-primary btn-sm'
-                  onClick={this.callNumber.bind(this, m.phone)}>call</button>
+            onClick={this.callNumber.bind(this, m.phone)}>call</button>
         </td>
       </tr>
     )
 
     return <div>
-      <textarea id='message-template'
-                rows='4'
-                onChange={this.changeTemplate}
-                value={this.state.template} />
+      <select value={this.state.index} onChange={evt => {
+        const index = evt.target.value
+        this.setState({ index, template: this.state.templates[index].body })
+      }}>
+        {this.state.templates.map((template, index) =>
+          <option
+            key={template.name}
+            value={index}
+          >{template.name}</option>
+        )}
+      </select>
+      <textarea
+        id='message-template'
+        readOnly
+        rows='4'
+        value={this.state.template} />
 
       <p>{this.state.members.length} members</p>
 
@@ -75,4 +85,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App/>, document.getElementById('main'))
+ReactDOM.render(<App />, document.getElementById('main'))

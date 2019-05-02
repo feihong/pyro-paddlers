@@ -69,8 +69,18 @@ async function getRosters() {
 async function getRoster(name) {
   let text = await fs.readFile(`./.data/${name}.csv`, 'utf-8')
   return new Promise((resolve, _reject) => {
-    csvParse(text, { columns: true }, (_err, rows) => resolve(rows))
+    csvParse(text, { columns: true }, (_err, rows) => {
+      rows.sort((x, y) =>
+        x.name < y.name ? -1 : x.name > y.name ? 1 : 0
+      )
+      resolve(rows);
+    })
   })
+}
+
+async function getMessageTemplates() {
+  let text = await fs.readFile(`./templates/messages.json`)
+  return JSON.parse(text)
 }
 
 // http://expressjs.com/en/starter/static-files.html
@@ -87,12 +97,13 @@ app.get('/captain', staticBasicAuth, async (req, res) => {
 
 app.get('/roster/:name', staticBasicAuth, async (req, res) => {
   const name = req.params.name
-  let members = JSON.stringify(await getRoster(name))
-  let phone = process.env.PHONE
-  res.render('roster.html', { name, members, phone })
+  const members = JSON.stringify(await getRoster(name))
+  const phone = process.env.PHONE
+  const messageTemplates = JSON.stringify(await getMessageTemplates())
+  res.render('roster.html', { name, members, phone, messageTemplates })
 })
 
-app.get('/roster/:name/json', staticBasicAuth, async (req, res) => {
+app.get('/roster/:name.json', staticBasicAuth, async (req, res) => {
   res.status(200).json(await getTeam())
 })
 
