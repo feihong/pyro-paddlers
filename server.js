@@ -3,7 +3,7 @@
 
 // init project
 const fs = require('fs-extra')
-const showdown  = require('showdown')
+const showdown = require('showdown')
 const csvParse = require('csv-parse')
 const nunjucks = require('nunjucks')
 const express = require('express')
@@ -24,10 +24,10 @@ nunjucks.configure('templates', {
 
 const basicAuth = require('express-basic-auth')
 const staticBasicAuth = basicAuth({
-    users: {
-        [process.env.USERNAME]: process.env.PASSWORD
-    },
-    challenge: true,
+  users: {
+    [process.env.USERNAME]: process.env.PASSWORD
+  },
+  challenge: true,
 })
 
 async function renderPage(mdFile) {
@@ -59,10 +59,17 @@ async function renderPage(mdFile) {
 </html>`
 }
 
-async function getTeam() {
-  let text = await fs.readFile('./.data/team.csv', 'utf-8')
+async function getRosters() {
+  let csvFiles = await fs.readdir('./.data')
+  return csvFiles
+    .filter(f => f.endsWith('.csv'))
+    .map(f => f.split('.')[0])
+}
+
+async function getRoster(name) {
+  let text = await fs.readFile(`./.data/${name}.csv`, 'utf-8')
   return new Promise((resolve, _reject) => {
-    csvParse(text, {columns: true}, (_err, rows) => resolve(rows))
+    csvParse(text, { columns: true }, (_err, rows) => resolve(rows))
   })
 }
 
@@ -73,13 +80,19 @@ app.get('/', async (req, res) => {
   res.send(await renderPage('index'))
 })
 
-app.get('/team', staticBasicAuth, async (req, res) => {
-  let members = JSON.stringify(await getTeam())
-  let phone = process.env.PHONE
-  res.render('team.html', {members, phone})
+app.get('/captain', staticBasicAuth, async (req, res) => {
+  const rosters = await getRosters()
+  res.render('captain.html', { rosters })
 })
 
-app.get('/team.json', staticBasicAuth, async (req, res) => {
+app.get('/roster/:name', staticBasicAuth, async (req, res) => {
+  const name = req.params.name
+  let members = JSON.stringify(await getRoster(name))
+  let phone = process.env.PHONE
+  res.render('roster.html', { name, members, phone })
+})
+
+app.get('/roster/:name/json', staticBasicAuth, async (req, res) => {
   res.status(200).json(await getTeam())
 })
 
@@ -96,5 +109,5 @@ app.get('/:name', async (req, res) => {
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT || 8000, () => {
-  console.log('Your app is listening on port ' + listener.address().port)
+  console.log(`Your app is listening on http://localhost:${listener.address().port}`)
 })

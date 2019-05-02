@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Captain's Mess</title>
+  <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Captain's Mess</h1>
+
+    <h2>Rosters</h2>
+    <ul>
+      {% for roster in rosters %}
+      <li>
+        <a href="/roster/{{ roster }}">{{ roster }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+
+</html>
