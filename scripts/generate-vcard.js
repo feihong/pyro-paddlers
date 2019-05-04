@@ -1,18 +1,14 @@
-const fs = require('fs-extra')
+const fs = require('fs')
 const vc = require('vcards-js')
-const csvParse = require('csv-parse')
-
-async function getRows(filename) {
-  let text = await fs.readFile('entire.csv')
-  return new Promise((resolve, _reject) => {
-    csvParse(text, { columns: true }, (_err, rows) => resolve(rows))
-  })
-}
+const { getRoster } = require('./csv')
 
 async function main() {
-  const rows = await getRows('entire.csv')
+  const inputFile = process.argv[2]
+  // console.log(inputFile);
+
+  const rows = getRoster(inputFile)
   const vcardStrings = rows.map(row => {
-    console.log(row.name, row.phone);
+    console.log(row.name)
     let parts = row.name.split(' ')
     let card = vc()
     card.firstName = parts[0]
@@ -22,7 +18,9 @@ async function main() {
     card.email = row.email
     return card.getFormattedString()
   })
-  await fs.writeFile('entire.vcf', vcardStrings.join('\n'))
+  const outputFile = inputFile.split('.')[0] + '.vcf'
+  fs.writeFileSync(outputFile, vcardStrings.join('\n'))
+  console.log(`\nWrote to ${outputFile}`)
 }
 
 main()

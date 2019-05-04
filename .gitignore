@@ -4,3 +4,4 @@
 .env
 .glitch-assets
 *.csv
+*.vcf

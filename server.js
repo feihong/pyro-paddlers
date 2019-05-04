@@ -1,12 +1,9 @@
-// server.js
-// where your node app starts
-
-// init project
 const fs = require('fs-extra')
 const showdown = require('showdown')
 const csvParse = require('csv-parse')
 const nunjucks = require('nunjucks')
 const express = require('express')
+const { getRoster } = require('./scripts/csv')
 
 if (!process.env.PROJECT_DOMAIN) {
   // read environment variables (only necessary locally, not on Glitch)
@@ -66,18 +63,6 @@ async function getRosters() {
     .map(f => f.split('.')[0])
 }
 
-async function getRoster(name) {
-  let text = await fs.readFile(`./.data/${name}.csv`, 'utf-8')
-  return new Promise((resolve, _reject) => {
-    csvParse(text, { columns: true }, (_err, rows) => {
-      rows.sort((x, y) =>
-        x.name < y.name ? -1 : x.name > y.name ? 1 : 0
-      )
-      resolve(rows);
-    })
-  })
-}
-
 async function getMessageTemplates() {
   let text = await fs.readFile(`./templates/messages.json`)
   return JSON.parse(text)
@@ -97,7 +82,8 @@ app.get('/captain', staticBasicAuth, async (req, res) => {
 
 app.get('/roster/:name', staticBasicAuth, async (req, res) => {
   const name = req.params.name
-  const members = JSON.stringify(await getRoster(name))
+  const csvFile = `./.data/${name}.csv`
+  const members = JSON.stringify(getRoster(csvFile))
   const phone = process.env.PHONE
   const messageTemplates = JSON.stringify(await getMessageTemplates())
   res.render('roster.html', { name, members, phone, messageTemplates })
