@@ -1,11 +1,11 @@
 [
   {
-    "name": "indoor practice #1 reminder",
-    "body": "UIC Pyro Paddlers reminder: Hi NAME, our first practice is 12:00 pm on Sat, May 4 at 3400 N Rockwell St. Arrive early to sign waiver and warm up. To confirm, text 1."
+    "name": "indoor practice #2 reminder",
+    "body": "UIC Pyro Paddlers reminder: Hi NAME, our second practice is 10:00 am on Sun, May 19 at 3400 N Rockwell St. Arrive early to warm up. To confirm, text 1. Text 0 if you can't make it."
   },
   {
-    "name": "indoor practice #1",
-    "body": "Hi NAME, this is your captain, Feihong. Our practice starts at 12:00 pm. If you're having problems finding the practice site at 3400 N Rockwell St, call me at PHONE."
+    "name": "indoor practice #2",
+    "body": "Hi NAME, this is your captain, Feihong. Our practice starts at 10:00 am. If you're having problems finding the practice site at 3400 N Rockwell St, call me at PHONE."
   },
   {
     "name": "outdoor practice reminder",
