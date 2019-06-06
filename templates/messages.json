@@ -1,5 +1,13 @@
 [
   {
+    "name": "outdoor practice #2 reminder",
+    "body": "UIC Pyro Paddlers reminder: Hi NAME, our next practice is 11:30 am on Sat, Jun 8 at 1020 W Weed St. Arrive early to find parking and sign waiver. To confirm, text 1. Text 0 if you can't make it."
+  },
+  {
+    "name": "outdoor practice #2",
+    "body": "Hi NAME, this is your captain, Feihong. Our practice starts at 11:30 am. If you're having problems finding the practice site at 1020 W Weed St, call me at PHONE."
+  },
+  {
     "name": "outdoor practice #1 reminder",
     "body": "UIC Pyro Paddlers reminder: Hi NAME, our next practice is 1:00 pm on Sun, Jun 2 at 1020 W Weed St. Arrive early to find parking and sign waiver. To confirm, text 1. Text 0 if you can't make it."
   },
