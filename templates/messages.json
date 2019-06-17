@@ -1,5 +1,17 @@
 [
   {
+    "name": "pre-race practice reminder",
+    "body": "UIC Pyro Paddlers reminder: Hi NAME, our pre-race practice is 6:00 pm on Fri, Jun 21 at Ping Tom Memorial Park. Meet at the pagoda. To confirm, text 1. Text 0 if you can't make it."
+  },
+  {
+    "name": "race reminder",
+    "body": "UIC Pyro Paddlers reminder: Hi NAME, arrive by 7:30 am on Sat, Jun 22 at Ping Tom Memorial Park. Check at registration table for location of our team site. To confirm, text 1. Text 0 if you can't make it."
+  },
+  {
+    "name": "race inquiry",
+    "body": "Hi NAME, this is your captain, Feihong. We start marshaling at 7:50 am. If you're having problems getting to the race site at Ping Tom Memorial Park, call me at PHONE."
+  },
+  {
     "name": "outdoor practice #2 reminder",
     "body": "UIC Pyro Paddlers reminder: Hi NAME, our next practice is 11:30 am on Sat, Jun 8 at 1020 W Weed St. Arrive early to find parking and sign waiver. To confirm, text 1. Text 0 if you can't make it."
   },
