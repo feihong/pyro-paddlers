@@ -1,11 +1,15 @@
 [
   {
+    "name": "race inquiry",
+    "body": "Hi NAME, this is your captain, Feihong. We start marshaling at 7:50 am. If you're having problems getting to the race site at Ping Tom Memorial Park, call me at PHONE."
+  },
+  {
     "name": "race reminder",
     "body": "UIC Pyro Paddlers reminder: Hi NAME, arrive by 7:30 am on Sat, Jun 22 at Ping Tom Memorial Park. When you enter the park, turn left to find us at lot 31. We need to be at the dock at 7:50 am for our first heat."
   },
   {
-    "name": "race inquiry",
-    "body": "Hi NAME, this is your captain, Feihong. We start marshaling at 7:50 am. If you're having problems getting to the race site at Ping Tom Memorial Park, call me at PHONE."
+    "name": "pre-race practice inquiry",
+    "body": "Hi NAME, this is your captain, Feihong. We get into the boat at 6:30. If you can't get here by then, you can just jump into another boat to practice since there are plenty of open spots."
   },
   {
     "name": "pre-race practice reminder",
