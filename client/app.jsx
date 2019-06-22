@@ -64,9 +64,9 @@ class App extends React.Component {
       </select>
       <textarea
         id='message-template'
-        readOnly
         rows='4'
-        value={this.state.template} />
+        value={this.state.template}
+        onChange={this.changeTemplate} />
 
       <p>{this.state.members.length} members</p>
 
