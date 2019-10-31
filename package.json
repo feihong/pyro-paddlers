@@ -10,7 +10,7 @@
     "node": "11.x"
   },
   "dependencies": {
-    "csv-parse": "^2.5.0",
+    "csv-parse": "^4.4.6",
     "express": "^4.16.3",
     "express-basic-auth": "^1.2.0",
     "fs-extra": "^6.0.1",
